@@ -1,36 +1,218 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Page</title>
-</head>
-<body>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    "
+  >
+    <div
+      style="
+        background-color: white;
+        width: 90%;
+        max-width: 500px;
+        margin: 30px auto;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <h1 style="color: #333; margin-bottom: 25px">Sign Up - By Ali Haider</h1>
 
-    <h2>Sign Up</h2>
-    
-    <form action="submit-form.php" method="POST">
-        <label for="first_name">First Name:</label>
-        <input type="text" id="first_name" name="first_name" required><br><br>
+      <form style="text-align: left">
+        <div style="overflow: hidden">
+          <div style="width: 48%; float: left">
+            <label
+              for="firstName"
+              style="
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #555;
+              "
+              >First Name</label
+            >
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              required
+              style="
+                width: 90%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-sizing: border-box;
+              "
+            />
+          </div>
+          <div style="width: 48%; float: right">
+            <label
+              for="lastName"
+              style="
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #555;
+              "
+              >Last Name</label
+            >
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              required
+              style="
+                width: 90%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-sizing: border-box;
+              "
+            />
+          </div>
+        </div>
 
-        <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" name="last_name" required><br><br>
+        <div
+          style="
+            clear: both;
+            padding-top: 15px;
+            display: flex;
+            overflow: hidden;
+            justify-content: justify-between;
+          "
+        >
+          <div style="width: 45%">
+            <label
+              for="contact"
+              style="
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #555;
+              "
+              >Contact Number</label
+            >
+            <input
+              type="tel"
+              id="contact"
+              name="contact"
+              required
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-sizing: border-box;
+              "
+            />
+          </div>
 
-        <label for="contact_number">Contact Number:</label>
-        <input type="tel" id="contact_number" name="contact_number" required><br><br>
+          <div style="width: 45%; margin-left: 40px; float: left">
+            <label
+              for="email"
+              style="
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #555;
+              "
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              style="
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-sizing: border-box;
+              "
+            />
+          </div>
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <div style="padding-top: 15px">
+          <label
+            for="password"
+            style="
+              display: block;
+              margin-bottom: 5px;
+              font-weight: bold;
+              color: #555;
+            "
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            style="
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #ddd;
+              border-radius: 4px;
+              box-sizing: border-box;
+            "
+          />
+        </div>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
+        <div style="padding-top: 15px">
+          <label
+            for="confirmPassword"
+            style="
+              display: block;
+              margin-bottom: 5px;
+              font-weight: bold;
+              color: #555;
+            "
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+            style="
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #ddd;
+              border-radius: 4px;
+              box-sizing: border-box;
+            "
+          />
+        </div>
 
-        <label for="confirm_password">Confirm Password:</label>
-        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
-
-        <button type="submit">Sign Up</button>
-    </form>
-
-</body>
+        <button
+          type="submit"
+          style="
+            background-color: #f7374f;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            width: 100%;
+            transition: background-color 0.3s;
+          "
+        >
+          Sign Up
+        </button>
+      </form>
+    </div>
+  </body>
 </html>
